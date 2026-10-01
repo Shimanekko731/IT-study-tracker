@@ -584,17 +584,25 @@
     <!-- ══ スケジュールタブ ══ -->
     <div class="tab-panel active" id="tab-schedule" style="padding-bottom:18px">
 
-      <!-- Phase 1 -->
+      <div class="alert alert-info" style="margin-bottom:16px">
+        📋 全14週プラン：<strong>1周目（Week 1〜8）</strong>で全範囲を網羅 → <strong>2周目（Week 9〜12）</strong>で復習＆定着 → <strong>仕上げ（Week 13〜14）</strong>で合格圏到達
+      </div>
+
+      <!-- ────────── 1周目 ────────── -->
+
+      <!-- Phase 1：1周目 基礎理論＆アルゴリズム -->
       <div class="card" style="border-color:var(--phase1)">
         <div class="section-header" onclick="toggleCard('ph1')">
-          <h2><span class="phase-badge phase-1">Phase 1</span>基礎理論＆アルゴリズム入門</h2>
+          <h2><span class="phase-badge phase-1">Phase 1</span>【1周目】基礎理論＆アルゴリズム入門</h2>
           <div style="display:flex;align-items:center;gap:8px">
             <span class="text-muted text-sm">9/30〜10/11</span>
             <span class="toggle-icon" id="ph1-icon">▼</span>
           </div>
         </div>
         <div class="card-body" id="ph1-body">
-          <div id="week-1" class="week-block">
+
+          <!-- Week 1 -->
+          <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 1</span>
               <span class="week-period">9/30〜10/4</span>
@@ -602,17 +610,18 @@
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>🎬 Udemy</h4>
-                <ul class="checklist" id="cl-w1-udemy">
+                <h4>🎬 Udemy 1周目</h4>
+                <ul class="checklist">
                   <li><input type="checkbox" id="w1u1" onchange="saveCheck(this)"><label for="w1u1">セクション0（試験概要 6分）視聴完了</label></li>
                   <li><input type="checkbox" id="w1u2" onchange="saveCheck(this)"><label for="w1u2">セクション1（データ型・数釈 16分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w1u3" onchange="saveCheck(this)"><label for="w1u3">セクション2（条件分岐 16分）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>📚 教科書・問題集</h4>
-                <ul class="checklist" id="cl-w1-text">
-                  <li><input type="checkbox" id="w1t1" onchange="saveCheck(this)"><label for="w1t1">教科書 序章 読了</label></li>
-                  <li><input type="checkbox" id="w1t2" onchange="saveCheck(this)"><label for="w1t2">教科書 第1〜2章 読了</label></li>
+                <h4>📖 教科書 1周目</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w1t1" onchange="saveCheck(this)"><label for="w1t1">序章・第1章 読了</label></li>
+                  <li><input type="checkbox" id="w1t2" onchange="saveCheck(this)"><label for="w1t2">第2章 読了</label></li>
                   <li><input type="checkbox" id="w1t3" onchange="saveCheck(this)"><label for="w1t3">出る順問題集 20問以上</label></li>
                   <li><input type="checkbox" id="w1t4" onchange="saveCheck(this)"><label for="w1t4">学習時間 1.5h/日 達成</label></li>
                 </ul>
@@ -620,7 +629,8 @@
             </div>
           </div>
 
-          <div id="week-2" class="week-block">
+          <!-- Week 2 -->
+          <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 2</span>
               <span class="week-period">10/7〜10/11</span>
@@ -628,16 +638,16 @@
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>🎬 Udemy</h4>
+                <h4>🎬 Udemy 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w2u1" onchange="saveCheck(this)"><label for="w2u1">セクション2（条件分岐 16分）視聴完了</label></li>
-                  <li><input type="checkbox" id="w2u2" onchange="saveCheck(this)"><label for="w2u2">セクション3（手続と関数 36分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w2u1" onchange="saveCheck(this)"><label for="w2u1">セクション3（手続と関数 36分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w2u2" onchange="saveCheck(this)"><label for="w2u2">セクション4（繰り返し選択 24分）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>📚 教科書・問題集</h4>
+                <h4>📖 教科書 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w2t1" onchange="saveCheck(this)"><label for="w2t1">教科書 第3章（アルゴリズム）精読完了</label></li>
+                  <li><input type="checkbox" id="w2t1" onchange="saveCheck(this)"><label for="w2t1">第3章（アルゴリズムとプログラミング）読了</label></li>
                   <li><input type="checkbox" id="w2t2" onchange="saveCheck(this)"><label for="w2t2">条件分岐・関数の実装パターン習得</label></li>
                   <li><input type="checkbox" id="w2t3" onchange="saveCheck(this)"><label for="w2t3">出る順問題集 25問以上</label></li>
                   <li><input type="checkbox" id="w2t4" onchange="saveCheck(this)"><label for="w2t4">目標正答率40%達成</label></li>
@@ -648,16 +658,18 @@
         </div>
       </div>
 
-      <!-- Phase 2 -->
+      <!-- Phase 2：1周目 コンピュータ・システム構成 -->
       <div class="card" style="border-color:var(--phase2);margin-top:12px">
         <div class="section-header" onclick="toggleCard('ph2')">
-          <h2><span class="phase-badge phase-2">Phase 2</span>データ構造＆配列マスター</h2>
+          <h2><span class="phase-badge phase-2">Phase 2</span>【1周目】コンピュータ・システム構成</h2>
           <div style="display:flex;align-items:center;gap:8px">
             <span class="text-muted text-sm">10/14〜10/25</span>
             <span class="toggle-icon" id="ph2-icon">▼</span>
           </div>
         </div>
         <div class="card-body" id="ph2-body">
+
+          <!-- Week 3 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 3</span>
@@ -666,22 +678,24 @@
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>🎬 Udemy</h4>
+                <h4>🎬 Udemy 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w3u1" onchange="saveCheck(this)"><label for="w3u1">セクション4（繰り返し選択 24分）視聴完了</label></li>
-                  <li><input type="checkbox" id="w3u2" onchange="saveCheck(this)"><label for="w3u2">セクション5（配列 62分 前半）視聴完了</label></li>
+                  <li><input type="checkbox" id="w3u1" onchange="saveCheck(this)"><label for="w3u1">セクション5（配列 62分 前半）視聴完了</label></li>
+                  <li><input type="checkbox" id="w3u2" onchange="saveCheck(this)"><label for="w3u2">セクション5（配列 62分 後半）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>📚 教科書・問題集</h4>
+                <h4>📖 教科書 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w3t1" onchange="saveCheck(this)"><label for="w3t1">教科書 第4〜5章 読了</label></li>
-                  <li><input type="checkbox" id="w3t2" onchange="saveCheck(this)"><label for="w3t2">繰り返し＆配列の実装を完全習得</label></li>
+                  <li><input type="checkbox" id="w3t1" onchange="saveCheck(this)"><label for="w3t1">第4章（コンピュータの構成要素）読了</label></li>
+                  <li><input type="checkbox" id="w3t2" onchange="saveCheck(this)"><label for="w3t2">第5章（システムの構成要素）読了</label></li>
                   <li><input type="checkbox" id="w3t3" onchange="saveCheck(this)"><label for="w3t3">出る順問題集 25問以上</label></li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <!-- Week 4 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 4</span>
@@ -690,18 +704,19 @@
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>🎬 Udemy</h4>
+                <h4>🎬 Udemy 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w4u1" onchange="saveCheck(this)"><label for="w4u1">セクション5（配列 62分 後半）視聴完了</label></li>
-                  <li><input type="checkbox" id="w4u2" onchange="saveCheck(this)"><label for="w4u2">セクション6（二次元配列 62分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w4u1" onchange="saveCheck(this)"><label for="w4u1">セクション6（二次元配列 62分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w4u2" onchange="saveCheck(this)"><label for="w4u2">セクション7（OOP 22分）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>📚 教科書・問題集</h4>
+                <h4>📖 教科書 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w4t1" onchange="saveCheck(this)"><label for="w4t1">教科書 第6〜7章 読了</label></li>
-                  <li><input type="checkbox" id="w4t2" onchange="saveCheck(this)"><label for="w4t2">二次元配列・ソートの実装パターン習得</label></li>
-                  <li><input type="checkbox" id="w4t3" onchange="saveCheck(this)"><label for="w4t3">出る順問題集 25問以上</label></li>
+                  <li><input type="checkbox" id="w4t1" onchange="saveCheck(this)"><label for="w4t1">第6章（ソフトウェア）読了</label></li>
+                  <li><input type="checkbox" id="w4t2" onchange="saveCheck(this)"><label for="w4t2">第7章（ハードウェア）読了</label></li>
+                  <li><input type="checkbox" id="w4t3" onchange="saveCheck(this)"><label for="w4t3">第8章（HI・マルチメディア）読了</label></li>
+                  <li><input type="checkbox" id="w4t4" onchange="saveCheck(this)"><label for="w4t4">出る順問題集 25問以上</label></li>
                 </ul>
               </div>
             </div>
@@ -709,16 +724,18 @@
         </div>
       </div>
 
-      <!-- Phase 3 -->
+      <!-- Phase 3：1周目 DB・NW・セキュリティ・開発 -->
       <div class="card" style="border-color:#fde68a;margin-top:12px">
         <div class="section-header" onclick="toggleCard('ph3')">
-          <h2><span class="phase-badge phase-3">Phase 3</span>応用アルゴリズム＆技術系知識</h2>
+          <h2><span class="phase-badge phase-3">Phase 3</span>【1周目】DB・NW・セキュリティ・開発</h2>
           <div style="display:flex;align-items:center;gap:8px">
             <span class="text-muted text-sm">10/28〜11/8</span>
             <span class="toggle-icon" id="ph3-icon">▼</span>
           </div>
         </div>
         <div class="card-body" id="ph3-body">
+
+          <!-- Week 5 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 5</span>
@@ -727,41 +744,42 @@
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>🎬 Udemy</h4>
+                <h4>🎬 Udemy 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w5u1" onchange="saveCheck(this)"><label for="w5u1">セクション7（OOP 22分）視聴完了</label></li>
-                  <li><input type="checkbox" id="w5u2" onchange="saveCheck(this)"><label for="w5u2">セクション8（データ構造 33分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w5u1" onchange="saveCheck(this)"><label for="w5u1">セクション8（データ構造 33分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w5u2" onchange="saveCheck(this)"><label for="w5u2">セクション9（ビット演算 19分）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>📚 教科書・問題集</h4>
+                <h4>📖 教科書 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w5t1" onchange="saveCheck(this)"><label for="w5t1">教科書 第8〜11章 読了</label></li>
-                  <li><input type="checkbox" id="w5t2" onchange="saveCheck(this)"><label for="w5t2">OOP＆グラフ・木構造の理解</label></li>
+                  <li><input type="checkbox" id="w5t1" onchange="saveCheck(this)"><label for="w5t1">第9章（データベース）読了</label></li>
+                  <li><input type="checkbox" id="w5t2" onchange="saveCheck(this)"><label for="w5t2">第10章（ネットワーク）読了</label></li>
                   <li><input type="checkbox" id="w5t3" onchange="saveCheck(this)"><label for="w5t3">出る順問題集 25問以上</label></li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <!-- Week 6 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 6</span>
               <span class="week-period">11/4〜11/8</span>
-              <span class="week-goal">目標：午前50%以上</span>
+              <span class="week-goal">目標：科目A 1周目完了</span>
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>🎬 Udemy</h4>
+                <h4>🎬 Udemy 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w6u1" onchange="saveCheck(this)"><label for="w6u1">セクション9（ビット演算 19分）視聴完了</label></li>
-                  <li><input type="checkbox" id="w6u2" onchange="saveCheck(this)"><label for="w6u2">セクション14（セキュリティ対策 20分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w6u1" onchange="saveCheck(this)"><label for="w6u1">セクション14（セキュリティ対策 20分）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>📚 教科書・問題集</h4>
+                <h4>📖 教科書 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w6t1" onchange="saveCheck(this)"><label for="w6t1">教科書 第12〜15章 読了</label></li>
-                  <li><input type="checkbox" id="w6t2" onchange="saveCheck(this)"><label for="w6t2">ビット演算＆セキュリティ対策完成</label></li>
+                  <li><input type="checkbox" id="w6t1" onchange="saveCheck(this)"><label for="w6t1">第11章（情報セキュリティ）読了</label></li>
+                  <li><input type="checkbox" id="w6t2" onchange="saveCheck(this)"><label for="w6t2">第12章（システム開発）読了</label></li>
                   <li><input type="checkbox" id="w6t3" onchange="saveCheck(this)"><label for="w6t3">出る順問題集・科目A 1周目完了</label></li>
                 </ul>
               </div>
@@ -770,61 +788,65 @@
         </div>
       </div>
 
-      <!-- Phase 4 -->
+      <!-- Phase 4：1周目 開発・マネジメント・経営 -->
       <div class="card" style="border-color:#bbf7d0;margin-top:12px">
         <div class="section-header" onclick="toggleCard('ph4')">
-          <h2><span class="phase-badge phase-4">Phase 4</span>開発・マネジメント＋午前対策</h2>
+          <h2><span class="phase-badge phase-4">Phase 4</span>【1周目】開発手法・マネジメント・経営</h2>
           <div style="display:flex;align-items:center;gap:8px">
             <span class="text-muted text-sm">11/11〜11/22</span>
             <span class="toggle-icon" id="ph4-icon">▼</span>
           </div>
         </div>
         <div class="card-body" id="ph4-body">
+
+          <!-- Week 7 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 7</span>
               <span class="week-period">11/11〜11/15</span>
-              <span class="week-goal">目標：午前65%＋午後40%以上</span>
+              <span class="week-goal">目標：午前60%以上</span>
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>📚 教科書・問題集</h4>
+                <h4>🎬 Udemy 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w7t1" onchange="saveCheck(this)"><label for="w7t1">教科書 第16〜21章 読了</label></li>
-                  <li><input type="checkbox" id="w7t2" onchange="saveCheck(this)"><label for="w7t2">開発・PM・戦略系の概念理解</label></li>
-                  <li><input type="checkbox" id="w7t3" onchange="saveCheck(this)"><label for="w7t3">出る順問題集・科目A 2周目完了</label></li>
-                  <li><input type="checkbox" id="w7t4" onchange="saveCheck(this)"><label for="w7t4">出る順問題集・科目B 1周目開始</label></li>
+                  <li><input type="checkbox" id="w7u1" onchange="saveCheck(this)"><label for="w7u1">セクション13（プログラミング対策）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>🎯 確認</h4>
+                <h4>📖 教科書 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w7c1" onchange="saveCheck(this)"><label for="w7c1">午前模擬テスト50%以上達成</label></li>
-                  <li><input type="checkbox" id="w7c2" onchange="saveCheck(this)"><label for="w7c2">弱点分野の特定と対策</label></li>
+                  <li><input type="checkbox" id="w7t1" onchange="saveCheck(this)"><label for="w7t1">第13章（ソフトウェア開発手法）読了</label></li>
+                  <li><input type="checkbox" id="w7t2" onchange="saveCheck(this)"><label for="w7t2">第14章（プロジェクトマネジメント）読了</label></li>
+                  <li><input type="checkbox" id="w7t3" onchange="saveCheck(this)"><label for="w7t3">第15章（サービスマネジメント）読了</label></li>
+                  <li><input type="checkbox" id="w7t4" onchange="saveCheck(this)"><label for="w7t4">出る順問題集 25問以上</label></li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <!-- Week 8 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 8</span>
               <span class="week-period">11/18〜11/22</span>
-              <span class="week-goal">目標：午前75%以上＋午後45%以上</span>
+              <span class="week-goal">目標：教科書 第16〜22章＋付録 1周目完了</span>
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>📚 問題集</h4>
+                <h4>🎬 Udemy 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w8t1" onchange="saveCheck(this)"><label for="w8t1">教科書 全体の復習</label></li>
-                  <li><input type="checkbox" id="w8t2" onchange="saveCheck(this)"><label for="w8t2">出る順問題集・科目A 3周目完了</label></li>
-                  <li><input type="checkbox" id="w8t3" onchange="saveCheck(this)"><label for="w8t3">出る順問題集・科目B 1周目完了</label></li>
+                  <li><input type="checkbox" id="w8u1" onchange="saveCheck(this)"><label for="w8u1">セクション10（IPA令和4年12月 40分）視聴完了</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>🎬 Udemy</h4>
+                <h4>📖 教科書 1周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w8u1" onchange="saveCheck(this)"><label for="w8u1">セクション10（IPA令和4年12月）視聴開始</label></li>
-                  <li><input type="checkbox" id="w8c1" onchange="saveCheck(this)"><label for="w8c1">午前75%以上達成</label></li>
+                  <li><input type="checkbox" id="w8t1" onchange="saveCheck(this)"><label for="w8t1">第16〜17章（システム戦略・企画）読了</label></li>
+                  <li><input type="checkbox" id="w8t2" onchange="saveCheck(this)"><label for="w8t2">第18〜19章（経営戦略・ビジネス）読了</label></li>
+                  <li><input type="checkbox" id="w8t3" onchange="saveCheck(this)"><label for="w8t3">第20〜21章（企業活動・法務）読了</label></li>
+                  <li><input type="checkbox" id="w8t4" onchange="saveCheck(this)"><label for="w8t4">第22章（科目B完全対策）＋付録 読了</label></li>
+                  <li><input type="checkbox" id="w8t5" onchange="saveCheck(this)"><label for="w8t5">出る順問題集・科目B 1周目開始</label></li>
                 </ul>
               </div>
             </div>
@@ -832,62 +854,198 @@
         </div>
       </div>
 
-      <!-- Phase 5 -->
-      <div class="card" style="border-color:#fbcfe8;margin-top:12px">
+      <!-- ────────── 2周目 ────────── -->
+
+      <!-- Phase 5：2周目 基礎〜技術系 復習 -->
+      <div class="card" style="border-color:var(--phase1);margin-top:12px">
         <div class="section-header" onclick="toggleCard('ph5')">
-          <h2><span class="phase-badge phase-5">Phase 5</span>IPA公式問題演習＆最終対策</h2>
+          <h2><span class="phase-badge phase-1">Phase 5</span>【2周目】基礎〜技術系 総復習</h2>
           <div style="display:flex;align-items:center;gap:8px">
             <span class="text-muted text-sm">11/25〜12/6</span>
             <span class="toggle-icon" id="ph5-icon">▼</span>
           </div>
         </div>
         <div class="card-body" id="ph5-body">
+
+          <!-- Week 9 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 9</span>
               <span class="week-period">11/25〜11/29</span>
-              <span class="week-goal">目標：午前80%以上＋午後55%以上</span>
+              <span class="week-goal">目標：午前70%以上</span>
             </div>
             <div class="week-content">
               <div class="week-col">
-                <h4>🎬 Udemy（IPA公式問題）</h4>
+                <h4>🎬 Udemy 2周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w9u1" onchange="saveCheck(this)"><label for="w9u1">セクション10（IPA令和4年12月 40分）完了</label></li>
-                  <li><input type="checkbox" id="w9u2" onchange="saveCheck(this)"><label for="w9u2">セクション11（IPA令和5年7月 53分）完了</label></li>
-                  <li><input type="checkbox" id="w9u3" onchange="saveCheck(this)"><label for="w9u3">セクション13（プログラミング対策）完了</label></li>
+                  <li><input type="checkbox" id="w9u1" onchange="saveCheck(this)"><label for="w9u1">セクション0〜3（基礎・条件・関数）速習</label></li>
+                  <li><input type="checkbox" id="w9u2" onchange="saveCheck(this)"><label for="w9u2">セクション4〜6（繰り返し・配列）速習</label></li>
                 </ul>
               </div>
               <div class="week-col">
-                <h4>📚 問題集</h4>
+                <h4>📖 教科書 2周目</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w9t1" onchange="saveCheck(this)"><label for="w9t1">科目B 2周目（時間計測）完了</label></li>
-                  <li><input type="checkbox" id="w9t2" onchange="saveCheck(this)"><label for="w9t2">時間配分を意識した演習</label></li>
-                  <li><input type="checkbox" id="w9c1" onchange="saveCheck(this)"><label for="w9c1">午後55%以上達成</label></li>
+                  <li><input type="checkbox" id="w9t1" onchange="saveCheck(this)"><label for="w9t1">序章〜第3章 2周目読了</label></li>
+                  <li><input type="checkbox" id="w9t2" onchange="saveCheck(this)"><label for="w9t2">第4〜8章 2周目読了</label></li>
+                  <li><input type="checkbox" id="w9t3" onchange="saveCheck(this)"><label for="w9t3">出る順問題集・科目A 2周目（前半）</label></li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <!-- Week 10 -->
           <div class="week-block">
             <div class="week-header">
               <span class="week-title">Week 10</span>
               <span class="week-period">12/2〜12/6</span>
-              <span class="week-goal">🎯 合格圏到達：午前85%＋午後65%</span>
+              <span class="week-goal">目標：午前75%以上</span>
+            </div>
+            <div class="week-content">
+              <div class="week-col">
+                <h4>🎬 Udemy 2周目</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w10u1" onchange="saveCheck(this)"><label for="w10u1">セクション7〜9（OOP・データ構造・ビット）速習</label></li>
+                  <li><input type="checkbox" id="w10u2" onchange="saveCheck(this)"><label for="w10u2">セクション11（IPA令和5年7月 53分）視聴完了</label></li>
+                </ul>
+              </div>
+              <div class="week-col">
+                <h4>📖 教科書 2周目</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w10t1" onchange="saveCheck(this)"><label for="w10t1">第9〜12章（DB・NW・セキュリティ・開発）2周目</label></li>
+                  <li><input type="checkbox" id="w10t2" onchange="saveCheck(this)"><label for="w10t2">出る順問題集・科目A 2周目（後半）完了</label></li>
+                  <li><input type="checkbox" id="w10t3" onchange="saveCheck(this)"><label for="w10t3">出る順問題集・科目B 1周目完了</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 6：2周目 開発手法〜経営 ＋ IPA演習 -->
+      <div class="card" style="border-color:var(--phase3);margin-top:12px">
+        <div class="section-header" onclick="toggleCard('ph6')">
+          <h2><span class="phase-badge phase-3">Phase 6</span>【2周目】マネジメント・経営＋IPA問題演習</h2>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="text-muted text-sm">12/9〜12/20</span>
+            <span class="toggle-icon" id="ph6-icon">▼</span>
+          </div>
+        </div>
+        <div class="card-body" id="ph6-body">
+
+          <!-- Week 11 -->
+          <div class="week-block">
+            <div class="week-header">
+              <span class="week-title">Week 11</span>
+              <span class="week-period">12/9〜12/13</span>
+              <span class="week-goal">目標：午前80%以上＋午後50%以上</span>
+            </div>
+            <div class="week-content">
+              <div class="week-col">
+                <h4>🎬 Udemy 2周目</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w11u1" onchange="saveCheck(this)"><label for="w11u1">セクション12（IPA令和6年公開分 42分）視聴完了</label></li>
+                  <li><input type="checkbox" id="w11u2" onchange="saveCheck(this)"><label for="w11u2">セクション13・14（科目B対策・セキュリティ）2周目</label></li>
+                </ul>
+              </div>
+              <div class="week-col">
+                <h4>📖 教科書 2周目</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w11t1" onchange="saveCheck(this)"><label for="w11t1">第13〜15章（開発手法・PM・SM）2周目</label></li>
+                  <li><input type="checkbox" id="w11t2" onchange="saveCheck(this)"><label for="w11t2">第16〜19章（戦略・企画・経営）2周目</label></li>
+                  <li><input type="checkbox" id="w11t3" onchange="saveCheck(this)"><label for="w11t3">出る順問題集・科目B 2周目（時間計測）開始</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 12 -->
+          <div class="week-block">
+            <div class="week-header">
+              <span class="week-title">Week 12</span>
+              <span class="week-period">12/16〜12/20</span>
+              <span class="week-goal">目標：教科書 2周目完了＋午後55%以上</span>
+            </div>
+            <div class="week-content">
+              <div class="week-col">
+                <h4>🎬 Udemy 2周目</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w12u1" onchange="saveCheck(this)"><label for="w12u1">Udemy 2周目 全セクション視聴完了確認</label></li>
+                  <li><input type="checkbox" id="w12u2" onchange="saveCheck(this)"><label for="w12u2">弱点セクションを重点的に再視聴</label></li>
+                </ul>
+              </div>
+              <div class="week-col">
+                <h4>📖 教科書 2周目</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w12t1" onchange="saveCheck(this)"><label for="w12t1">第20〜22章＋付録 2周目読了</label></li>
+                  <li><input type="checkbox" id="w12t2" onchange="saveCheck(this)"><label for="w12t2">出る順問題集・科目B 2周目完了</label></li>
+                  <li><input type="checkbox" id="w12t3" onchange="saveCheck(this)"><label for="w12t3">弱点分野の特定と集中対策</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 7：最終仕上げ -->
+      <div class="card" style="border-color:#fbcfe8;margin-top:12px">
+        <div class="section-header" onclick="toggleCard('ph7')">
+          <h2><span class="phase-badge phase-5">Phase 7</span>【最終仕上げ】本番シミュレーション</h2>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="text-muted text-sm">12/23〜試験日</span>
+            <span class="toggle-icon" id="ph7-icon">▼</span>
+          </div>
+        </div>
+        <div class="card-body" id="ph7-body">
+
+          <!-- Week 13 -->
+          <div class="week-block">
+            <div class="week-header">
+              <span class="week-title">Week 13</span>
+              <span class="week-period">12/23〜12/27</span>
+              <span class="week-goal">目標：午前85%以上＋午後60%以上</span>
             </div>
             <div class="week-content">
               <div class="week-col">
                 <h4>🎬 Udemy</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w10u1" onchange="saveCheck(this)"><label for="w10u1">セクション12（IPA令和6年公開分 42分）完了</label></li>
-                  <li><input type="checkbox" id="w10u2" onchange="saveCheck(this)"><label for="w10u2">本番シミュレーション実施</label></li>
+                  <li><input type="checkbox" id="w13u1" onchange="saveCheck(this)"><label for="w13u1">本番シミュレーション（IPA問題 時間計測）実施</label></li>
+                  <li><input type="checkbox" id="w13u2" onchange="saveCheck(this)"><label for="w13u2">間違えた問題のセクションを再視聴</label></li>
                 </ul>
               </div>
               <div class="week-col">
+                <h4>📖 最終確認</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w13t1" onchange="saveCheck(this)"><label for="w13t1">科目A 模擬テスト 85%以上達成</label></li>
+                  <li><input type="checkbox" id="w13t2" onchange="saveCheck(this)"><label for="w13t2">科目B 時間内完答 練習</label></li>
+                  <li><input type="checkbox" id="w13t3" onchange="saveCheck(this)"><label for="w13t3">付録「寝る前10分確認リスト」チェック</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 14 -->
+          <div class="week-block">
+            <div class="week-header">
+              <span class="week-title">Week 14（試験直前）</span>
+              <span class="week-period">12/28〜試験日</span>
+              <span class="week-goal">🎯 合格圏到達：午前85%＋午後65%</span>
+            </div>
+            <div class="week-content">
+              <div class="week-col">
                 <h4>🎯 最終確認</h4>
                 <ul class="checklist">
-                  <li><input type="checkbox" id="w10t1" onchange="saveCheck(this)"><label for="w10t1">科目A・B 最終復習完了</label></li>
-                  <li><input type="checkbox" id="w10t2" onchange="saveCheck(this)"><label for="w10t2">教科書の付録「確認リスト」チェック</label></li>
-                  <li><input type="checkbox" id="w10t3" onchange="saveCheck(this)"><label for="w10t3">十分な睡眠・体調管理</label></li>
-                  <li><input type="checkbox" id="w10c1" onchange="saveCheck(this)"><label for="w10c1">🎉 合格圏達成！</label></li>
+                  <li><input type="checkbox" id="w14t1" onchange="saveCheck(this)"><label for="w14t1">科目A・B 最終復習完了</label></li>
+                  <li><input type="checkbox" id="w14t2" onchange="saveCheck(this)"><label for="w14t2">教科書 付録「試験直前の確認リスト」チェック</label></li>
+                  <li><input type="checkbox" id="w14t3" onchange="saveCheck(this)"><label for="w14t3">受験票・持ち物・会場確認</label></li>
+                  <li><input type="checkbox" id="w14t4" onchange="saveCheck(this)"><label for="w14t4">十分な睡眠・体調管理</label></li>
+                  <li><input type="checkbox" id="w14c1" onchange="saveCheck(this)"><label for="w14c1">🎉 合格圏達成！</label></li>
+                </ul>
+              </div>
+              <div class="week-col">
+                <h4>📖 教科書</h4>
+                <ul class="checklist">
+                  <li><input type="checkbox" id="w14b1" onchange="saveCheck(this)"><label for="w14b1">教科書 2周目 全章完了</label></li>
+                  <li><input type="checkbox" id="w14b2" onchange="saveCheck(this)"><label for="w14b2">Udemy 2周目 全セクション完了</label></li>
                 </ul>
               </div>
             </div>
@@ -908,7 +1066,8 @@
             <th>推奨速度</th>
             <th>優先度</th>
             <th>活用週</th>
-            <th>完了</th>
+            <th style="text-align:center">1周目<br><span style="font-weight:400;color:var(--muted)">視聴</span></th>
+            <th style="text-align:center">2周目<br><span style="font-weight:400;color:var(--muted)">視聴</span></th>
           </tr>
         </thead>
         <tbody id="udemy-tbody"></tbody>
@@ -926,7 +1085,8 @@
             <th>対応フェーズ</th>
             <th>対応週</th>
             <th>理解度</th>
-            <th>読了</th>
+            <th style="text-align:center">1周目<br><span style="font-weight:400;color:var(--muted)">読了</span></th>
+            <th style="text-align:center">2周目<br><span style="font-weight:400;color:var(--muted)">読了</span></th>
           </tr>
         </thead>
         <tbody id="textbook-tbody"></tbody>
@@ -1001,21 +1161,21 @@ const KEY_EXAM     = 'fit_exam_date';
 
 // ══ Udemyデータ ══
 const udemySections = [
-  { id:'u0',  title:'セクション0',  desc:'試験概要',               mins:6,  speed:'1倍',   priority:'⭐⭐⭐', week:'Week 1' },
-  { id:'u1',  title:'セクション1',  desc:'データ型・数釈',         mins:16, speed:'1.5倍', priority:'⭐⭐',   week:'Week 1' },
-  { id:'u2',  title:'セクション2',  desc:'条件分岐',               mins:16, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 2' },
-  { id:'u3',  title:'セクション3',  desc:'手続と関数',             mins:36, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 2' },
-  { id:'u4',  title:'セクション4',  desc:'繰り返し選択',           mins:24, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 3' },
-  { id:'u5',  title:'セクション5',  desc:'配列・二次元配列①',     mins:62, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 3〜4' },
-  { id:'u6',  title:'セクション6',  desc:'配列・二次元配列②',     mins:62, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 4' },
-  { id:'u7',  title:'セクション7',  desc:'オブジェクト指向',       mins:22, speed:'1.5倍', priority:'⭐⭐',   week:'Week 5' },
-  { id:'u8',  title:'セクション8',  desc:'データ構造（ツリー等）', mins:33, speed:'1.5倍', priority:'⭐⭐⭐', week:'Week 5' },
-  { id:'u9',  title:'セクション9',  desc:'ビット演算',             mins:19, speed:'1.5倍', priority:'⭐',    week:'Week 6' },
-  { id:'u10', title:'セクション10', desc:'IPA令和4年12月公開分',   mins:40, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 8〜9' },
-  { id:'u11', title:'セクション11', desc:'IPA令和5年7月公開分',    mins:53, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 9' },
-  { id:'u12', title:'セクション12', desc:'IPA令和6年公開分',       mins:42, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 10' },
-  { id:'u13', title:'セクション13', desc:'プログラミング対策',     mins:null,speed:'1倍',  priority:'⭐⭐⭐', week:'Week 9' },
-  { id:'u14', title:'セクション14', desc:'セキュリティ分野対策',   mins:20, speed:'1.5倍', priority:'⭐⭐',   week:'Week 6' },
+  { id:'u0',  title:'セクション0',  desc:'試験概要',               mins:6,  speed:'1倍',   priority:'⭐⭐⭐', week:'Week 1（2周目:Week 9）' },
+  { id:'u1',  title:'セクション1',  desc:'データ型・数釈',         mins:16, speed:'1.5倍', priority:'⭐⭐',   week:'Week 1（2周目:Week 9）' },
+  { id:'u2',  title:'セクション2',  desc:'条件分岐',               mins:16, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 1（2周目:Week 9）' },
+  { id:'u3',  title:'セクション3',  desc:'手続と関数',             mins:36, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 2（2周目:Week 9）' },
+  { id:'u4',  title:'セクション4',  desc:'繰り返し選択',           mins:24, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 2（2周目:Week 9）' },
+  { id:'u5',  title:'セクション5',  desc:'配列①',                 mins:62, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 3（2周目:Week 9）' },
+  { id:'u6',  title:'セクション6',  desc:'配列②（二次元）',       mins:62, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 4（2周目:Week 10）' },
+  { id:'u7',  title:'セクション7',  desc:'オブジェクト指向',       mins:22, speed:'1.5倍', priority:'⭐⭐',   week:'Week 4（2周目:Week 10）' },
+  { id:'u8',  title:'セクション8',  desc:'データ構造（ツリー等）', mins:33, speed:'1.5倍', priority:'⭐⭐⭐', week:'Week 5（2周目:Week 10）' },
+  { id:'u9',  title:'セクション9',  desc:'ビット演算',             mins:19, speed:'1.5倍', priority:'⭐',    week:'Week 5（2周目:Week 10）' },
+  { id:'u10', title:'セクション10', desc:'IPA令和4年12月公開分',   mins:40, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 8（2周目:Week 13）' },
+  { id:'u11', title:'セクション11', desc:'IPA令和5年7月公開分',    mins:53, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 10（2周目:Week 13）' },
+  { id:'u12', title:'セクション12', desc:'IPA令和6年公開分',       mins:42, speed:'1倍',   priority:'⭐⭐⭐', week:'Week 11（2周目:Week 13）' },
+  { id:'u13', title:'セクション13', desc:'プログラミング対策',     mins:null,speed:'1倍',  priority:'⭐⭐⭐', week:'Week 7（2周目:Week 11）' },
+  { id:'u14', title:'セクション14', desc:'セキュリティ分野対策',   mins:20, speed:'1.5倍', priority:'⭐⭐',   week:'Week 6（2周目:Week 11）' },
 ];
 
 // ══ 初期化 ══
@@ -1109,19 +1269,21 @@ function updateSummary() {
   document.getElementById('week-progress').textContent = weekPct + '%';
   document.getElementById('week-bar').style.width = weekPct + '%';
 
-  // Udemy
+  // Udemy（2周目完了を100%基準、1周目完了を50%換算で合算）
   const udemyDone = JSON.parse(localStorage.getItem(KEY_UDEMY) || '{}');
   const udTotal = udemySections.length;
-  const udDone = Object.values(udemyDone).filter(Boolean).length;
-  const udPct = Math.round(udDone / udTotal * 100);
+  const udDone1 = Object.values(udemyDone).filter(v => v && (v.done1 || v === true)).length;
+  const udDone2 = Object.values(udemyDone).filter(v => v && v.done2).length;
+  const udPct = Math.round((udDone1 + udDone2) / (udTotal * 2) * 100);
   document.getElementById('udemy-progress').textContent = udPct + '%';
   document.getElementById('udemy-bar').style.width = udPct + '%';
 
-  // 教科書
+  // 教科書（2周目完了を100%基準、1周目完了を50%換算で合算）
   const tbDone = JSON.parse(localStorage.getItem(KEY_TEXTBOOK) || '{}');
   const tbTotal = textbookChapters.length;
-  const tbDoneCount = Object.values(tbDone).filter(v => v && v.done).length;
-  const tbPct = Math.round(tbDoneCount / tbTotal * 100);
+  const tbDone1Count = Object.values(tbDone).filter(v => v && v.done1).length;
+  const tbDone2Count = Object.values(tbDone).filter(v => v && v.done2).length;
+  const tbPct = Math.round((tbDone1Count + tbDone2Count) / (tbTotal * 2) * 100);
   document.getElementById('textbook-progress').textContent = tbPct + '%';
   document.getElementById('textbook-bar').style.width = tbPct + '%';
 
@@ -1141,30 +1303,30 @@ function updateSummary() {
 
 // ══ 教科書データ ══
 const textbookChapters = [
-  { id:'tb0',  title:'序章',      desc:'基本情報技術者試験の概要と効果的な学習方法', phase:'Phase 1', week:'Week 1' },
-  { id:'tb1',  title:'第1章',     desc:'基礎理論①',                               phase:'Phase 1', week:'Week 1' },
-  { id:'tb2',  title:'第2章',     desc:'基礎理論②',                               phase:'Phase 1', week:'Week 1' },
-  { id:'tb3',  title:'第3章',     desc:'アルゴリズムとプログラミング',             phase:'Phase 1', week:'Week 2' },
-  { id:'tb4',  title:'第4章',     desc:'コンピュータの構成要素',                   phase:'Phase 2', week:'Week 3' },
-  { id:'tb5',  title:'第5章',     desc:'システムの構成要素',                       phase:'Phase 2', week:'Week 3' },
-  { id:'tb6',  title:'第6章',     desc:'ソフトウェア',                             phase:'Phase 2', week:'Week 3' },
-  { id:'tb7',  title:'第7章',     desc:'ハードウェア',                             phase:'Phase 2', week:'Week 4' },
-  { id:'tb8',  title:'第8章',     desc:'ヒューマンインタフェースとマルチメディア', phase:'Phase 2', week:'Week 4' },
-  { id:'tb9',  title:'第9章',     desc:'データベース',                             phase:'Phase 3', week:'Week 5' },
-  { id:'tb10', title:'第10章',    desc:'ネットワーク',                             phase:'Phase 3', week:'Week 5' },
-  { id:'tb11', title:'第11章',    desc:'情報セキュリティ',                         phase:'Phase 3', week:'Week 6' },
-  { id:'tb12', title:'第12章',    desc:'システム開発',                             phase:'Phase 3', week:'Week 6' },
-  { id:'tb13', title:'第13章',    desc:'ソフトウェア開発手法',                     phase:'Phase 4', week:'Week 7' },
-  { id:'tb14', title:'第14章',    desc:'プロジェクトマネジメント',                 phase:'Phase 4', week:'Week 7' },
-  { id:'tb15', title:'第15章',    desc:'サービスマネジメントとシステム監査',       phase:'Phase 4', week:'Week 7' },
-  { id:'tb16', title:'第16章',    desc:'システム戦略',                             phase:'Phase 4', week:'Week 7' },
-  { id:'tb17', title:'第17章',    desc:'システム企画',                             phase:'Phase 4', week:'Week 7' },
-  { id:'tb18', title:'第18章',    desc:'経営戦略マネジメント',                     phase:'Phase 4', week:'Week 7' },
-  { id:'tb19', title:'第19章',    desc:'ビジネスインダストリ',                     phase:'Phase 4', week:'Week 7' },
-  { id:'tb20', title:'第20章',    desc:'企業活動',                                 phase:'Phase 4', week:'Week 7' },
-  { id:'tb21', title:'第21章',    desc:'法務',                                     phase:'Phase 4', week:'Week 7' },
-  { id:'tb22', title:'第22章',    desc:'［科目B］完全対策',                        phase:'Phase 5', week:'Week 9' },
-  { id:'tb23', title:'【付録】',  desc:'寝る前10分＆試験直前の確認リスト',         phase:'Phase 5', week:'Week 10' },
+  { id:'tb0',  title:'序章',      desc:'基本情報技術者試験の概要と効果的な学習方法', phase:'Phase 1', week:'Week 1（2周目:Week 9）' },
+  { id:'tb1',  title:'第1章',     desc:'基礎理論①',                               phase:'Phase 1', week:'Week 1（2周目:Week 9）' },
+  { id:'tb2',  title:'第2章',     desc:'基礎理論②',                               phase:'Phase 1', week:'Week 1（2周目:Week 9）' },
+  { id:'tb3',  title:'第3章',     desc:'アルゴリズムとプログラミング',             phase:'Phase 1', week:'Week 2（2周目:Week 9）' },
+  { id:'tb4',  title:'第4章',     desc:'コンピュータの構成要素',                   phase:'Phase 2', week:'Week 3（2周目:Week 9）' },
+  { id:'tb5',  title:'第5章',     desc:'システムの構成要素',                       phase:'Phase 2', week:'Week 3（2周目:Week 9）' },
+  { id:'tb6',  title:'第6章',     desc:'ソフトウェア',                             phase:'Phase 2', week:'Week 3（2周目:Week 9）' },
+  { id:'tb7',  title:'第7章',     desc:'ハードウェア',                             phase:'Phase 2', week:'Week 4（2周目:Week 9）' },
+  { id:'tb8',  title:'第8章',     desc:'ヒューマンインタフェースとマルチメディア', phase:'Phase 2', week:'Week 4（2周目:Week 9）' },
+  { id:'tb9',  title:'第9章',     desc:'データベース',                             phase:'Phase 3', week:'Week 5（2周目:Week 10）' },
+  { id:'tb10', title:'第10章',    desc:'ネットワーク',                             phase:'Phase 3', week:'Week 5（2周目:Week 10）' },
+  { id:'tb11', title:'第11章',    desc:'情報セキュリティ',                         phase:'Phase 3', week:'Week 6（2周目:Week 10）' },
+  { id:'tb12', title:'第12章',    desc:'システム開発',                             phase:'Phase 3', week:'Week 6（2周目:Week 10）' },
+  { id:'tb13', title:'第13章',    desc:'ソフトウェア開発手法',                     phase:'Phase 4', week:'Week 7（2周目:Week 11）' },
+  { id:'tb14', title:'第14章',    desc:'プロジェクトマネジメント',                 phase:'Phase 4', week:'Week 7（2周目:Week 11）' },
+  { id:'tb15', title:'第15章',    desc:'サービスマネジメントとシステム監査',       phase:'Phase 4', week:'Week 7（2周目:Week 11）' },
+  { id:'tb16', title:'第16章',    desc:'システム戦略',                             phase:'Phase 4', week:'Week 8（2周目:Week 11）' },
+  { id:'tb17', title:'第17章',    desc:'システム企画',                             phase:'Phase 4', week:'Week 8（2周目:Week 11）' },
+  { id:'tb18', title:'第18章',    desc:'経営戦略マネジメント',                     phase:'Phase 4', week:'Week 8（2周目:Week 12）' },
+  { id:'tb19', title:'第19章',    desc:'ビジネスインダストリ',                     phase:'Phase 4', week:'Week 8（2周目:Week 12）' },
+  { id:'tb20', title:'第20章',    desc:'企業活動',                                 phase:'Phase 4', week:'Week 8（2周目:Week 12）' },
+  { id:'tb21', title:'第21章',    desc:'法務',                                     phase:'Phase 4', week:'Week 8（2周目:Week 12）' },
+  { id:'tb22', title:'第22章',    desc:'［科目B］完全対策',                        phase:'Phase 5', week:'Week 8（2周目:Week 12）' },
+  { id:'tb23', title:'【付録】',  desc:'寝る前10分＆試験直前の確認リスト',         phase:'Phase 5', week:'Week 8・14（試験直前）' },
 ];
 
 function renderTextbookTable() {
@@ -1172,9 +1334,10 @@ function renderTextbookTable() {
   const tbody = document.getElementById('textbook-tbody');
   tbody.innerHTML = '';
   textbookChapters.forEach(ch => {
-    const state = saved[ch.id] || { done: false, stars: 0 };
+    const state = saved[ch.id] || { done1: false, done2: false, stars: 0 };
     const tr = document.createElement('tr');
-    if (state.done) tr.classList.add('done-row');
+    if (state.done2) tr.classList.add('done-row');
+    else if (state.done1) tr.style.background = '#f0fdf4'; // 1周目完了は薄緑
     const starsHtml = [1,2,3].map(n =>
       `<button onclick="setTextbookStars('${ch.id}', ${n}, this)" title="${n}★"
         style="background:none;border:none;cursor:pointer;font-size:15px;padding:0 1px;color:${state.stars >= n ? '#f59e0b' : '#d1d5db'}">${n <= state.stars ? '★' : '☆'}</button>`
@@ -1183,23 +1346,31 @@ function renderTextbookTable() {
       <td style="white-space:nowrap">${ch.title}</td>
       <td>${ch.desc}</td>
       <td><span class="phase-badge phase-${ch.phase.replace('Phase ','')}">${ch.phase}</span></td>
-      <td style="white-space:nowrap">${ch.week}</td>
+      <td style="white-space:nowrap;font-size:11px">${ch.week}</td>
       <td style="white-space:nowrap">${starsHtml}</td>
       <td style="text-align:center">
-        <input type="checkbox" ${state.done ? 'checked' : ''} onchange="toggleTextbook('${ch.id}', this)"
+        <input type="checkbox" ${state.done1 ? 'checked' : ''} onchange="toggleTextbook('${ch.id}', '1', this)"
           style="width:16px;height:16px;accent-color:#059669;cursor:pointer">
+      </td>
+      <td style="text-align:center">
+        <input type="checkbox" ${state.done2 ? 'checked' : ''} onchange="toggleTextbook('${ch.id}', '2', this)"
+          style="width:16px;height:16px;accent-color:#7c5cd8;cursor:pointer">
       </td>`;
     tbody.appendChild(tr);
   });
 }
 
-function toggleTextbook(id, cb) {
+function toggleTextbook(id, round, cb) {
   const saved = JSON.parse(localStorage.getItem(KEY_TEXTBOOK) || '{}');
-  if (!saved[id]) saved[id] = { done: false, stars: 0 };
-  saved[id].done = cb.checked;
+  if (!saved[id]) saved[id] = { done1: false, done2: false, stars: 0 };
+  saved[id]['done' + round] = cb.checked;
   localStorage.setItem(KEY_TEXTBOOK, JSON.stringify(saved));
+  // 行スタイルを更新
   const tr = cb.closest('tr');
-  if (tr) tr.classList.toggle('done-row', cb.checked);
+  if (tr) {
+    tr.classList.toggle('done-row', saved[id].done2);
+    tr.style.background = (!saved[id].done2 && saved[id].done1) ? '#f0fdf4' : '';
+  }
   updateSummary();
 }
 
@@ -1218,31 +1389,44 @@ function renderUdemyTable() {
   const tbody = document.getElementById('udemy-tbody');
   tbody.innerHTML = '';
   udemySections.forEach(s => {
-    const checked = done[s.id] || false;
+    const state = done[s.id];
+    // 旧データ（boolean）との互換性を保つ
+    const d1 = state === true || (state && state.done1) || false;
+    const d2 = state && state.done2 || false;
     const speedCls = s.speed === '1倍' ? 'speed-1x' : 'speed-1h5x';
     const tr = document.createElement('tr');
-    if (checked) tr.classList.add('done-row');
+    if (d2) tr.classList.add('done-row');
+    else if (d1) tr.style.background = '#eff6ff'; // 1周目完了は薄青
     tr.innerHTML = `
       <td>${s.title}</td>
       <td>${s.desc}</td>
       <td>${s.mins ? s.mins + '分' : '—'}</td>
       <td><span class="speed-tag ${speedCls}">${s.speed}</span></td>
       <td class="stars">${s.priority}</td>
-      <td>${s.week}</td>
+      <td style="font-size:11px">${s.week}</td>
       <td style="text-align:center">
-        <input type="checkbox" ${checked ? 'checked' : ''} onchange="toggleUdemy('${s.id}', this)"
+        <input type="checkbox" ${d1 ? 'checked' : ''} onchange="toggleUdemy('${s.id}', '1', this)"
           style="width:16px;height:16px;accent-color:var(--accent);cursor:pointer">
+      </td>
+      <td style="text-align:center">
+        <input type="checkbox" ${d2 ? 'checked' : ''} onchange="toggleUdemy('${s.id}', '2', this)"
+          style="width:16px;height:16px;accent-color:var(--secondary);cursor:pointer">
       </td>`;
     tbody.appendChild(tr);
   });
 }
 
-function toggleUdemy(id, cb) {
+function toggleUdemy(id, round, cb) {
   const done = JSON.parse(localStorage.getItem(KEY_UDEMY) || '{}');
-  done[id] = cb.checked;
+  // 旧データ（boolean）から移行
+  if (!done[id] || typeof done[id] !== 'object') done[id] = { done1: false, done2: false };
+  done[id]['done' + round] = cb.checked;
   localStorage.setItem(KEY_UDEMY, JSON.stringify(done));
   const tr = cb.closest('tr');
-  if (tr) tr.classList.toggle('done-row', cb.checked);
+  if (tr) {
+    tr.classList.toggle('done-row', done[id].done2);
+    tr.style.background = (!done[id].done2 && done[id].done1) ? '#eff6ff' : '';
+  }
   updateSummary();
 }
 
